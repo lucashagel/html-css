@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+    Tudo que em HTML é Id em CSS é # 
+    Tudo que em HTML é class em CSS é .
+
+    Id se sobrepõe a class
+    É possível ter multiplos elementos numa class, Id a W3C recomenda somente um
+*/
+
+body {
+    background-color: rgb(202, 230, 200);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal {
+    text-align: center;
+    color: rgb(58, 97, 55)
+     ;
+}
+
+h1 {
+    color: rgb(104, 173, 99)
+}
+
+h2.basico{
+    color: darkgreen
+     
+}
+
+h2.intermediario{
+    color: blue
+}
+
+h2.avancado{
+    color: red
+}

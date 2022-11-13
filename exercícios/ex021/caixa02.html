@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkgrey;
+    }
+
+    header {
+        background-color: whitesmoke;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color: rgba(102,102,102,0.5);
+        padding: 3px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px
+    }
+
+    article {
+        background-color: lightgrey;
+    }
+    
+    article > aside {
+        background-color: rgb(161, 160, 160);
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+    }
+</style>
+
+<body>
+    
+    <!-- ANTIGAMENTE SE FAZIA ASSIM 
+    <div>
+        <div id="cabecalho">
+        <h1>
+
+        </h1>
+            <div id="menu">
+            </div>
+        </div>               
+        <div id="conteudo">
+
+        </div>
+        </div id="rodape">
+        </div>
+    </div>
+
+    O código, principalmente em HTML4 era cheio de DIVs.
+    Mas a linguagem HTML5, com as semânticas, evoluiu muito. Existem grouping tags semânticas, é possível montar um site de forma semântica, o que vai beneficiar em muito os mecanismos de busca
+    =-->
+
+    <header>
+        <h1>New Site</h1>
+        <!-- não confundir cabeçalho com cabeça cabeça é configuração do site, cabeçalho é conteúdo, e fica dentro do corpo do site -->
+        <nav>
+        <a href="#">Link A</a>
+        <a href="#">Link B</a>
+        <a href="#">Link C</a>
+        <a href="#">Link D</a>
+        <a href="#">Link E</a>
+        </nav>
+    </header>
+    <main>  
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet praesentium similique quasi, corporis ullam, qui corrupti inventore, doloremque aspernatur dicta esse. Sit amet doloribus deserunt accusamus quae sequi dolores.</p>
+                    <aside>
+                        <p>Artigo escrito por João da Silva</p>
+                    </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Curso em Video</p>
+
+    </footer>
+
+
+</body>
+</html>
