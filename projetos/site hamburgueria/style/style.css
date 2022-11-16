@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CarnevaleFS';
+    src: url("../fonts/carnivalee-freakshow/carnivalee-freakshow.ttf") format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CerttoHL';
+    src: url("../fonts/certto-headline/certto-headline.otf") format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Zlyhania';
+    src: url("../fonts/code-zlyhania/code-zlyhania-regular.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gispiero';
+    src: url("../fonts/gipsiero/gipsiero.otf") format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lemongraf';
+    src: url("../fonts/gruen-lemonograf/gruen-lemonograf.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Zwaruman';
+    src: url("../fonts/zwaruman/zwaruman-vho.ttf") format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    /*color palette*/
+    --color01: #7c0915;
+    --color02: #FF0F28;
+    --color03: #DB3E16;
+    --color04: #F0771A;
+    --color05: #DB920F;
+    --color06: #FACB0F;
+    --color07: #ddbf86;
+
+    /*fonts*/
+    --font01: 'CarnevaleFS';
+    --font02: 'CerttoHL';
+    --font03: 'Zlyhania';
+    --font04: 'Gispiero';
+    --font05: 'Lemongraf';
+    --font06: 'Zwaruman';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    line-break: none;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color01), var(--color02));
+    height: 60vw;
+    width: 100%;
+    padding: 1vw;
+    border: 1vw;
+    margin: auto;
+    line-height: 5vw;
+}
+
+header > h1 {
+    font-family: var(--font01);
+    color: var(--color05);
+    font-size: 12vw;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 25vw;
+    margin-bottom: 5vw;
+}
+
+header > h2 {
+    font-family: var(--font06);
+    color: var(--color05);
+    font-size: 6vw;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 10vw;
+}
+
+nav {
+    font-family: var(--font03);
+    font-size: 6vw;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+nav > a {
+    color: var(--color05);
+}
+
+nav  > a:hover {
+    background-color: var(--color01);
+    color: var(--color06);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+main {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw;
+    height: 120vw;
+    background-color: var(--color07);
+}
+
+main h1 {
+    font-family: var(--font05);
+    text-align: left;
+    font-size: 8vw;
+}
+
+main h2 {
+    font-family: var(--font05);
+    text-align: left;
+    font-size: 6vw;
+}
+
+main h3 {
+    font-family: var(--font05);
+    text-align: left;
+    font-size: 4vw;
+}
+
+main p {
+    font-family: var(--font05);
+    text-align: justify;
+    font-size: 2vw;
+}
+
+article {
+    background-color: var(--color03)
+    font-family: var(--font05);
+    text-align: justify;
+    font-size: 2vw;
+}
+
+aside {
+    background-color: var(--color01) ;
+    font-family: var(--font05);
+    text-align: justify;
+    font-size: 2vw;
+}
+
+footer {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw;
+    height: 120vw;
+    background-color: var(--color07);
+}
+
+footer > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw; 
+}
+
+div {
+    padding: 1vw;
+}
